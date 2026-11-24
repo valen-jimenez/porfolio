@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html long="es"> 
+<head> 
+<meta charset="UTF-8"/>
+<meta name="vieport" content="width=device-width, initial-sacale=1.0">
+<title>Veterinaria</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>NALA VETERINARIA</h1>
+<h2>"El cuidado que tu mascota merece"</h2>
+<p>"Cuidamos a tu mejor amigo como si fuera de la familia.
+Vacunas, consultas, diagnóstico por imágenes y pet shop. Porque ellos se merecen lo mejor, estamos 
+siempre listos para cuidarlos."</p>
+
+<div class="contenedor">
+<img src="https://img.magnific.com/fotos-premium/gran-grupo-gatos-perros-mirando-camara-fondo-azul_191971-28557.jpg?semt=ais_hybrid&w=740&q=80" alt="animales mirando" width="700">
+</div>
+<nav>
+<table class="menu">
+<tr>
+<td><a href="#inicio">Inicio</a></td>
+<td><a href="#servicios">Servicios</a></td>
+<td><a href="#profesionales">Profesionales</a></td>
+<td><a href="#horarios">Horarios</a></td>
+<td><a href="#turnos">Turnos</a></td>
+<td><a href="#contacto">Contacto</a></td>
+</tr>
+</table>
+</nav>
+
+ <section id="servicios">
+ <h2>Servicios</h2>
+ <ul>
+ <li>Consulta veterinaria</li>
+ <li>Vacunación</li>
+ <li>Cirujías</li>
+ <li>Peluquería</li>
+<li>Control de peso</li>
+<li>Venta de alimentos</li>
+<li>Venta de accesorios</li>
+</ul>
+<a href="#">Volver arriba</a>
+ </section>
+
+<section id="profesionales">
+<h2>Nuestros profesionales</h2>
+<table border="1">
+<tr>
+<th>Profesional</th>
+<th>Especialidad</th>
+<th>Días</th>
+<th>Horarios</th>
+</tr>
+<tr>
+<td>Dra. Laura Gómez</td>
+<td>Clínica general</td>
+<td>Lunes y miércoles</td>
+<td>08:00 a 13:00</td>
+</tr>
+<tr>
+<td>Dr. Martín Pérez</td>
+<td>Dermatología</td>
+<td>Lunes y viernes</td>
+<td>16:00 a 21:00</td>
+</tr>
+<tr>
+<td>Dra. Sofía Roldán</td>
+<td>Dermatología</td>
+<td>Lunes y viernes</td>
+<td>16:00 a 21:00</td>
+</tr>
+<tr>
+<td>Dr. Juan Gómez</td>
+<td>Animales exóticos</td>
+<td>Miércoles y viernes</td>
+<td>09:00 a 13:00</td>
+</tr>
+<tr>
+<td>Dra. Laura Giménez</td>
+<td>Nutrición animal</td>
+<td>Martes y sábados</td>
+<td>08:00 a 13:00</td>
+</tr> 
+</table>
+<a href="#">Volver arriba</a>
+</section>
+
+<section id="horarios">
+<h2>Servicios y precios</h2>
+<table border="1">
+<tr>
+<th>Servicio</th>
+<th>Duración aproximada</th>
+<th>Precios</th>
+</tr>
+<tr>
+<td>Consulta veterinaria</td>
+<td>20 minutos</td>
+<td>$25.000</td>
+</tr>
+<tr>
+<td>Desparacitación</td>
+<td>15 minutos</td>
+<td>$10.000</td>
+</tr>
+<tr>
+<td>Control de peso</td>
+<td>20 minutos</td>
+<td>$10.000</td>
+</tr>
+<tr>
+<td>Peluquería</td>
+<td>1 hora</td>
+<td>$35.000</td>
+</tr>
+<tr>
+<td>Consulta nutricional</td>
+<td>40 minutos</td>
+<td>$30.000</td>
+</tr>
+<tr>
+<td>Vacunación</td>
+<td>20 minutos</td>
+<td>$20.000</td>
+</tr>
+</table>
+
+<section id="turnos">
+<h2>¿Cómo sololicitar tu turno?</h2>
+<ol>
+<li>Completar el formulario (datos del responsable).</li>
+<li>Ingresar datos de la mascota.</li>
+<li>Seleccionar el motivo de consulta.</li>
+<li>Elegir una fecha, horario y prfesional.</li>
+<li>Enviar la solicitud de turno.</li>
+</ol>
+<h2>Solicitar un turno</h2>
+<form>
+<legend>Datos del responsable</legend>
+<label for="nombre">Nombre y apellido:</label>
+<input type="text" id="nombre" name="nombre" required>
+
+<label for="email">Correo electrónico:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="telefono">Teléfono:</label>
+<input type="tel" id="telefono" name="telefono" required><br><br>
+
+<legend>Datos de la mascota</legend>
+
+<label for="mascota">Nombre de la mascota:</label>
+<input type="text" id="mascota" name="mascota" required>
+
+<label for="edad"></label>
+<input type="number" id="edad" name="edad">
+
+<label for="fecha-nacimiento">Fecha de nacimiento:</label>
+<input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+
+<label for="tipo">Tipo de mascota:</label>
+
+<select id="tipo" name="tipo">
+<option value="perro">Perro</option>
+<option value="geto">Gato:</option>
+<option value="conejo">Conejo:</option>
+<option value="ave">Ave:</option>
+<option value="otro">Otro:</option>
+</select>
+
+<legend> Motivo del turno</legend>
+<label>
+<input type="radio" name="motivo" value="control">Control general</label>
+
+<label>
+<input type="radio" name="motivo" value="vacunacion">Vacunación</label>
+
+<label>
+<input type="radio" name="motivo" value="consulta">Consulta</label>
+
+<label>
+<input type="radio" name="motivo" value="otro">Otro</label>
+
+<h4>Información adicional</h4>
+<label>
+<input type="checkbox" name="primera consulta">Primera-consulta</label>
+
+<label>
+<input type="checkbox" name="vacunas">Vacunas al día</label>
+
+<label>
+<input type="checkbox" name="medicacion">Actualmente toma medicación</label>
+
+<!--datos del turno-->
+<legend>Turnos</legend>
+<label for="fecha">Fecha:</label>
+<input type="date" id="fecha" name="fecha" required>
+
+<label for="horario">Horario:</label>
+<input type="time" id="horario" name="horario" required>
+
+<label for="profesional">Profesional:</label>
+<select id="profesional" name="profesional">
+
+<option value="Gomez">Dra. Laura Gómez</option>
+<option value="Perez">Dr. Martín Pérez</option>
+<option value="Roldan">Dra. Sofía Roldán</option>
+<option value="Gomez">Dr. Juan Gómez</option>
+<option value="Gimenez">Dra. Laura Giménez</option>
+
+</select>
+<label for="comentarios">Comentarios o información adicional:</label>
+<textarea id="comentarios" name="comentarios" rows="5"></textarea>
+
+<div class="botones">
+    <button type="submit">Solicitar turno</button>
+    <button type="reset">Limpiar</button>
+</div>
+</form>
+<a href="#">Volver arriba</a>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<p><strong>Dirección:</strong> Rodríguez Peña 6644, Mar del Plata.</p>
+<p><strong>Teléfono:</strong> 0223-685-1055</p>
+<p><strong>Correo:</strong> veterinarianala@gmail.com</p>
+<p><strong>Horarios:</strong></p>
+<p>Lunes a viernes de 08:00hs a 13:00hs y por las tardes de 16:00hs a 21:00hs.</p>
+<p>Sábados de 08:00hs a 13:00hs y de 16:00hs a 21:00hs.</p>
+<p>Domingos de 08:00hs a 13:00hs.</p>
+
+<h3>Redes sociales</h3>
+<p><a href="https://www.instagram.com/" target="_blank">Instagram</a> </p>
+<p><a href="https://www.facebook.com/" target="_blank">Facebook</a></p>
+<a href="#">Volver arriba</a>
+</section>
+
+
+</body>
